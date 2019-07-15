@@ -1,7 +1,7 @@
 # Reddit Natural Language Processing
 --------------
 ### Problem Statement
-> 1. Is it possible to determine where a reddit post comes from based on the title and the post text? 
+1. Is it possible to determine where a reddit post comes from based on the title and the post text? 
 2. How much does the language of climate denial/skepticism differ from the language used by those who believe in climate change? 
 
 ### Data Dictionary 
@@ -13,7 +13,7 @@
 
 ### Executive Summary
 In short, this project sought to create a classification model using natural language processing that could look at the text from a subreddit posts title and identify whether it came from /r/climatechange or /r/climateskeptics with as close to 100% accuracy as possible. I was able to create a logistical regression model that is able to predict subreddits with pretty good accuracy but it suffers from high variance. Here is a brief rundown of the steps I took to do this.
-> 1. Using the Python requests library and the reddit API, I pulled and organized post data from the r/climatechange and r/climateskeptics.
+1. Using the Python requests library and the reddit API, I pulled and organized post data from the r/climatechange and r/climateskeptics.
 2. After cleaning the data, I used natural language processing to tokenize and organize my textual data into computer readable results. I then used logistic regression to create a model. The resulting model had high accuracy also high variance.
 3. I created a few more models using GridSearchCV and Pipelines to set up optimal hyperparameters and tokenize our texual data. The resulting models had low variance but were also less accurate. 
 
